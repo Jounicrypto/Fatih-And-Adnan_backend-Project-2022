@@ -8,7 +8,7 @@
         <link rel="stylesheet" href="style.css">
         <title><%= pageTitle %></title>
     </head>
-    <body>
+    <body class="bdQ">
         <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
             <div class="container-fluid">
             <a class="navbar-brand" href="/">Hello World</a>
@@ -33,9 +33,9 @@
             </div>
         </nav>
 
-        <h1>Add a Question</h1>
+        <h1 class="addQ">Add a Question</h1>
         
-        <form method="POST" action="/postQuestion" class="container">
+        <form method="POST" action="/postQuestion" class="login">
             <div class="mb-3">
                 <label for="titleInputEmail1" class="form-label">Question</label>
                 <input  name="question" type="text" class="form-control" id="titleInputEmail1" aria-describedby="titleHelp">

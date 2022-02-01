@@ -8,7 +8,7 @@
         <link rel="stylesheet" href="/style.css">
         <title><%= pageTitle %></title>
     </head>
-    <body>
+    <body class="hmbd">
         <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
             <div class="container-fluid">
             <a class="navbar-brand" href="/">Hello World</a>
@@ -33,14 +33,14 @@
             </div>
         </nav>
 
-        <h1> Questions</h1>
+        <h1 class="mp">Ask Questions!</h1>
    
 
         <% if(questions.length != 0){ %>
             <% questions.forEach( question => { %>
-        <div class="question">
-        <h2><%= question.question %></h2>
-        <p><%= question.description %></p>
+        <div class="card-body">
+        <h2 class="card-title"><%= question.question %></h2>
+        <p class="card-text"><%= question.description %></p>
         <a href="/show-question/<%= question.id %>">See More </a> 
        </div>
 

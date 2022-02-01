@@ -18,3 +18,207 @@
     margin-left: 60px;
     margin-top: 3px;
 }
+
+
+.login{
+    background-color: #ffa500cc;
+    width: 400px;
+    position: absolute;
+    padding: 40px;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    text-align: center;
+    border-top-left-radius: 100px;
+    border-bottom-right-radius: 100px;
+}
+.login-body{
+    background-color: rgb(44, 43, 43); 
+    color: white;
+    font-family: Roboto black;
+    text-align: center;
+
+}
+.login input[type="email" ], .login input[type="password"]{
+    display: block;
+    margin: 20px auto;
+    padding: 10px 10px;
+    width: 250px;
+    background: none;
+    border: 2px solid black;
+    border-radius: 15px ;
+    transition: 0.8s;
+}
+
+.login input[type="email" ]:focus, .login input[type="password"]:focus{
+
+    border-left: 40px solid black;
+}
+
+.login button[type="submit"]{
+    background: none;
+    border: 2px solid black;
+    padding: 10px;
+    width: 100px;
+    margin: 10px 10px;
+    border-radius: 15px;
+}
+
+.bg{
+    background: url("/public/img/background.jpg");
+    background-size: cover;
+    height: 100%;
+    width: 100%;
+    opacity: 0.8;
+    background-position: center;
+
+}
+
+.register{
+    background-color: rgba(255, 165, 0, 0.8);
+    width: 400px;
+    position: absolute;
+    padding: 40px;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    text-align: center;
+    border-top-left-radius: 100px;
+    border-bottom-right-radius: 100px;
+}
+
+.register-body{
+    background-color: rgb(44, 43, 43);
+    color: white;
+    font-family: Roboto black;
+    text-align: center;
+}
+
+.register input[type="text" ],[type="text" ],[type="password"]{
+    display: block;
+    margin: 20px auto;
+    padding: 10px 10px;
+    width: 250px;
+    background: none;
+    border: 2px solid black;
+    border-radius: 15px ;
+    transition: 0.8s;
+}
+
+.register input[type="text" ]:focus,[type="text" ]:focus,[type="password"]:focus{
+
+    border-left: 40px solid black;
+}
+
+.register button[type="submit"]{
+    background: none;
+    border: 2px solid black;
+    padding: 10px;
+    width: 100px;
+    margin: 10px 10px;
+    border-radius: 15px;
+}
+
+.user{
+    border: 2px solid gray;
+    background-color: rgb(156, 243, 26);
+    border-style: initial;
+    width: 270px;
+    margin: 50px  30px 60px;
+    border-radius: 10px;
+    border-bottom: 4px solid gray;
+    position: absolute;
+    top: 40px;
+    margin-top: 30px;
+    
+
+    
+}
+.mp{
+    border: 2px solid gray;
+    background-color: rgb(223, 138, 26);
+    border-style: initial;
+    width: 280px;
+    margin: 40px 600px;
+    border-radius: 10px;
+    border-bottom: 4px solid gray;
+    
+    
+}
+
+.card-body{
+    background-color: #ffa500cc;
+   
+    width: 400px;
+    padding: 10px;
+    text-align: center;
+    /* border-top-left-radius: 100px; */
+    border-bottom-right-radius: 100px;
+    border-style: none;
+    
+    
+}
+
+.delbut{
+    background: none;
+    border: 2px solid black;
+    padding: 10px;
+    width: 160px;
+    margin: 10px 10px;
+    border-radius: 15px;
+
+}
+
+.editbut{
+    background: none;
+    border: 2px solid black;
+    padding: 10px;
+    width: 100px;
+    margin: 10px 10px;
+    border-radius: 15px;
+    justify-content: space-between;
+}
+
+.hmbd{
+    background-color: rgb(187, 187, 187);
+    color: black;
+    font-family: Roboto black;
+    text-align: center;
+    
+}
+
+.addQ{
+    border: 2px solid gray;
+    background-color: rgb(223, 138, 26);
+    border-style: initial;
+    width: 280px;
+    margin: 40px 600px;
+    border-radius: 10px;
+    border-bottom: 4px solid gray;
+    
+}
+
+.bdQ{
+    background-color: rgb(187, 187, 187);
+    color: black;
+    font-family: Roboto black;
+    text-align: center;
+}
+
+.logpic{
+    background: url(/public/img/online-community-frankwatching-345x245.jpg);
+    background-size: cover;
+    height: 100%;
+    width: 100%;
+    opacity: 0.8;
+    background-position: center;
+}
+
+.img-commu{
+    width: 1500px;
+    height: 800px;
+    background-image: url(img/online-community-frankwatching-345x245.jpg);
+    background-size: cover;
+    opacity: 0.39; 
+    background-position: center;
+}

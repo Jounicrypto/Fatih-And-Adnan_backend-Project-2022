@@ -1,7 +1,7 @@
 <%- include('components/header') -%>
 
 
-<form method="POST" action="/edit-question/<%= question.id %>" class="container">
+<form method="POST" action="/edit-question/<%= question.id %>" class="login" >
     <div class="mb-3">
         <label for="titleInputEmail1" class="form-label">Question</label>
         <input value="<%=question.question%>"  name="question" type="text" class="form-control" id="titleInputEmail1" aria-describedby="titleHelp">

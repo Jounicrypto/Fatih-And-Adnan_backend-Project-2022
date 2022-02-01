@@ -1,8 +1,11 @@
+
+
 <%- include('components/header') -%>
 
-<div class="showQuestion">
-<h2><%= question.question %></h2>
-<p><%= question.description %></p>
+
+<div class="card-body">
+<h2 class="card-title"><%= question.question %></h2>
+<p class="card-text"><%= question.description %></p>
 </div>
 
 <div class="questionBtn">
@@ -10,12 +13,12 @@
     <a class="btn btn-danger" href="/delete-question/<%= question.id %>">Delete Question</a>
 </div>
 
-<form method="POST" action="/comment-question/<%= question.id %>" >
+<form method="POST" action="/comment-question/<%= question.id %>" class="login">
 <div class="input-group">
     <span class="input-group-text">Add a Comment</span>
     <textarea name ="comment" class="form-control" aria-label="With textarea"></textarea>
     <!-- <a class="btn btn-danger" type="submit" href="" >Comment Question</a> -->
-    <button type="submit" class="btn btn-outline-danger">Comment Question</button>
+    <button type="submit" class="editbut">Comment Question</button>
   </div>
 </form>
 
