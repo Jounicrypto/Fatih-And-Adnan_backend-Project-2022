@@ -8,7 +8,7 @@ const app = express();
 app.use(bodyParser.json());
 
 const store = new MongoDBstore({
-    uri: "mongodb://localhost/Backend-project-2022",
+    uri: "mongodb+srv://adnanjo:099485@cluster0.hvrvw.mongodb.net/myFirstDatabase?retryWrites=true&w=majority",
     collection:"mySessions",
 });
 
