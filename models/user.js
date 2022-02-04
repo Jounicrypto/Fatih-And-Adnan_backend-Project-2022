@@ -1,6 +1,7 @@
 const { type } = require('express/lib/response');
 const mongoose = require('mongoose');
 const { required } = require('nodemon/lib/config');
+
 const mySchema = mongoose.Schema;
 
 const userSchema = new mySchema({

@@ -251,7 +251,7 @@ const questions =(req,res) => {
         const comments = comment.find()
         .then(comments  =>{
             console.log(comments);
-            res.render('showQuestionPage' ,{pageTitle:'Comment Page' , comments});
+            res.render('commentPage' ,{pageTitle:'Comment Page' , comments});
         })
         .catch(err=>{
             console.log(err)
@@ -265,15 +265,21 @@ const questions =(req,res) => {
 
         if (req.method=='GET') {
 
-            res.render('showQuestionPage' , {pageTitle:'comment' })
+            res.render('commentPage' , {pageTitle:'comment' })
         }
     
         if (req.method=='POST') {
-            const comment = comment(req.body);
-            console.log(comment);
-            comment.save()
+            const data ={
+                // username:req.body.username,
+                comment:req.body.comment,
+                user_id:req.body.user,
+                question_id:req.params.id
+            }
+            const newComment = comment(data);
+            console.log(newComment);
+            newComment.save()
             .then(() =>{
-                console.log(comment);
+                console.log(newComment);
                 res.redirect('/cmt');
             })
             .catch(err=>{

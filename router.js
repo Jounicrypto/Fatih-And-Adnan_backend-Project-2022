@@ -17,17 +17,17 @@ router.get('/message/edit/:id',controller.isAuth, controller.getEditMessage);
 router.post('/message/edit/:id', controller.postEditMessage);
 router.get('/questions', controller.getQuestionsPage);
 
-router.get('/homeQuestions', controller.getQuestion);
+router.get('/homeQuestions',controller.isAuth,controller.getQuestion);
 
-router.all('/postQuestion', controller.questions);
+router.all('/postQuestion',controller.userLoggedin, controller.questions);
 
-router.get('/show-question/:id', controller.showQuestion);
+router.get('/show-question/:id',controller.isAuth, controller.showQuestion);
 
 router.get('/delete-question/:id', controller.delQuestion);
-router.all('/edit-question/:id', controller.updateQuestion);
+router.all('/edit-question/:id',controller.isAuth, controller.updateQuestion);
 
-router.get('/cmt', controller.getComment);
-router.all('/comment-question/:id', controller.commentQuestion);
+router.get('/cmt',controller.isAuth, controller.getComment);
+router.all('/comment-question/:id',controller.isAuth, controller.commentQuestion);
 
 
 
